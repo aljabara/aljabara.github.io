@@ -228,4 +228,52 @@ header {
     font-size: 14px;
     line-height: 1.6;
 }
+/* Projects Section */
+.project-entry {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-left: 4px solid #0073b1;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Title & Dates */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-header h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.project-dates {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+/* Technologies Used */
+.project-entry p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Bullet Points */
+.project-entry ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.project-entry ul li {
+    font-size: 14px;
+    line-height: 1.6;
+}
 
