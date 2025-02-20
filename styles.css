@@ -58,3 +58,27 @@ footer {
     background: #222;
     color: white;
 }
+/* Dark Mode Styles */
+.dark-mode {
+    background: #222;
+    color: #f4f4f4;
+}
+
+.dark-mode nav {
+    background: #111;
+}
+
+.dark-mode section {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .card {
+    background: #444;
+    color: white;
+}
+
+.dark-mode footer {
+    background: #111;
+    color: white;
+}
