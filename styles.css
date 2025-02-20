@@ -16,21 +16,52 @@ nav {
     top: 0;
     z-index: 1000;
 }
+
 nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
+
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
 }
 
 /* Sections */
@@ -87,56 +118,66 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 40px 0;
     background: white;
     text-align: center;
+    width: 100%;
 }
 
 /* Profile Section */
 .profile {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
     gap: 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
 /* Profile Picture */
 .profile img {
-    width: 200px; /* Adjusted size */
+    width: 200px; /* Reduced size */
     height: 210px;
-    border-radius: 50%; /* Makes it circular */
-    border: 3px solid #0073b1; /* Adds a frame */
+    border-radius: 50%;
+    border: 4px solid #0073b1;
 }
 
 /* Profile Info */
 .profile-info {
-    text-align: left;
+    text-align: center;
 }
 
 /* Name Styling */
 .profile-info h1 {
-    font-size: 32px; /* Large font for name */
+    font-size: 36px; /* Larger font */
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 /* Contact Info */
 .contact {
-    font-size: 14px; /* Smaller font */
+    font-size: 14px;
     color: #555;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .contact a {
     text-decoration: none;
-    color: #0073b1; /* LinkedIn Blue */
+    color: #0073b1;
     font-weight: bold;
 }
 
 .contact a:hover {
     text-decoration: underline;
 }
+
 /* Experience Section */
 .experience-entry {
     margin-bottom: 30px;
-    padding: 15px;
+    padding: 20px;
     background: #fff;
     border-left: 4px solid #0044cc;
     border-radius: 5px;
@@ -148,12 +189,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .exp-header h3 {
     font-size: 22px;
     font-weight: bold;
     color: #333;
+    margin-bottom: 5px;
 }
 
 .exp-location {
@@ -170,7 +213,6 @@ header {
 }
 
 .exp-dates {
-    float: right;
     font-size: 14px;
     color: #777;
     font-style: italic;
@@ -179,9 +221,11 @@ header {
 /* Bullet Points */
 .experience-entry ul {
     padding-left: 20px;
+    margin-top: 5px;
 }
 
 .experience-entry ul li {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
+
