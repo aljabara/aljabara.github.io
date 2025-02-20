@@ -113,6 +113,73 @@ footer {
     background: #111;
     color: white;
 }
+/* Dark Mode for Header */
+.dark-mode header {
+    background: #111;
+    color: white;
+}
+
+/* Dark Mode for Profile Section */
+.dark-mode .profile img {
+    border: 3px solid #0073b1; /* Maintain border contrast */
+}
+
+.dark-mode .profile-info h1 {
+    color: white;
+}
+
+.dark-mode .contact a {
+    color: #4da3ff; /* Lighter blue for better contrast */
+}
+
+/* Dark Mode for Experience Section */
+.dark-mode .experience-entry {
+    background: #333;
+    border-left: 4px solid #4da3ff;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .exp-header h3 {
+    color: white;
+}
+
+.dark-mode .exp-location {
+    color: #bbb;
+}
+
+.dark-mode .exp-dates {
+    color: #bbb;
+}
+
+/* Dark Mode for Projects Section */
+.dark-mode .project-entry {
+    background: #333;
+    border-left: 4px solid #4da3ff;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .project-header h3 {
+    color: white;
+}
+
+.dark-mode .project-dates {
+    color: #bbb;
+}
+
+.dark-mode .project-entry p {
+    color: white;
+}
+
+/* Improve Navigation in Dark Mode */
+.dark-mode nav ul li a {
+    color: white;
+}
+
+.dark-mode nav ul li a:hover {
+    text-decoration: underline;
+    color: #4da3ff;
+}
+
 /* Header Styling */
 header {
     display: flex;
