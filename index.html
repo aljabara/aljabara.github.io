@@ -1,98 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-SA: I, Adam Al-Jabari, 400399330, certify that this material is my original work.
-No other person's work has been used without due acknowledgment.
-I have also not made my work available to anyone else.
--->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam Al-Jabari - Resume</title>
-    <style>
-    
-        body {
-            font-family: Arial, sans-serif;  }
-        h1, h2 {
-            font-family: "Times New Roman", Times, serif; }
-        .top-line {
-            display: flex; 
-            align-items: center;
-            gap: 20px; 
-        }
-        img {
-            width: 120px; /* ------------- Sets image size */
-            height: 120px;
-            border-radius: 50%; /*--------- Makes image circular */
-        } 
-        footer {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Adam Al-Jabari - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-   
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <h1>Adam Al-Jabari</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#extracurriculars">Extracurriculars</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
     <header>
-        <div class="top-line">
-            <img src="picture.png" alt="Adam's Picture">
-            <h1><em>Adam Al-Jabari</em></h1>
+        <div class="profile">
+            <img src="picture.png" alt="Adam Al-Jabari">
+            <h2>Adam Al-Jabari</h2>
+            <p>Automation Engineering Student | McMaster University</p>
+            <p>📞 905-399-1122 | ✉️ <a href="mailto:aljabara@mcmaster.ca">aljabara@mcmaster.ca</a></p>
+            <p>🔗 <a href="https://linkedin.com/in/al-jabari" target="_blank">LinkedIn Profile</a></p>
         </div>
     </header>
 
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am an aspiring Automation Engineer with a strong background in electrical design, PLC programming, and control systems. Passionate about innovation and industrial automation.</p>
+        </div>
+    </section>
+
     <!-- Education Section -->
-    <section>
-        <h2>Education</h2>
-        <p>High School: Modern Montessori School</p>
-        <p>College: Mohawk College - Advanced Chemical Engineering Diploma</p>
-        <p>University: McMaster University - Bachelor of Technology (Automation Engineering)</p>
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p><strong>McMaster University</strong> - Bachelor of Technology (Automation Engineering) (2021 - 2025)</p>
+            <p><strong>Chemical Engineering Advanced Diploma</strong></p>
+        </div>
     </section>
 
-    <!-- Work Section -->
-    <section>
-        <h2>Work</h2>
-        <p><strong><em>Electrical Design Engineering Co-op</em></strong> at ProMach – Zarpac (Paid)</p>
-        <ul>
-            <li>Designed electrical schematics using AutoCAD Electrical.</li>
-            <li>Streamlined PLC and HMI programs.</li>
-            <li>Built and troubleshot control panels and circuits.</li>
-            <li><a href="https://www.promachbuilt.com/">ProMach Website</a></li>
-        </ul>
-        <p><strong><em>Program Instructor</em></strong> at The STEAM Project (Paid)</p>
-        <ul>
-            <li>Led lessons for over 700 students.</li>
-            <li>Designed prototypes using SolidWorks.</li>
-            <li>Calibrated CNC machines and 3D printers.</li>
-            <li><a href="https://www.thesteamproject.ca/">STEAM Project Website</a></li>
-        </ul>
-        <p><strong><em>Technology Deputy Returning Officer</em></strong> at Elections Ontario (Paid)</p>
-        <ul>
-            <li>Operated electronic voting machines with accuracy.</li>
-            <li>Managed paperwork and records.</li>
-            <li>Assisted over 2,500 individuals during the election.</li>
-            <li><a href="https://www.elections.on.ca/">Elections Ontario Website</a></li>
-        </ul>
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="card">
+                <h3>Teaching Assistant - McMaster University</h3>
+                <p>Assisted in grading, tutorials, and student support for engineering courses.</p>
+            </div>
+            <div class="card">
+                <h3>Electrical Design Engineering Co-op - Promach</h3>
+                <p>Designed electrical schematics, streamlined PLC and HMI programs, and built control panels.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Hobbies Section -->
-    <section>
-        <h2>Hobbies</h2>
-        <ol>
-            <li>
-                <strong>Weightlifting</strong>: I enjoy training regularly to improve strength and endurance.
-            </li>
-            <li>
-                <strong>Gymnastics</strong>: I like practicing strength skills and new flips.
-            </li>
-            <li>
-                <strong>Reading Novel</strong>: Actively reading new books every week as I am a science fiction enthusiast.
-            </li>
-        </ol>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills & Certifications</h2>
+            <ul>
+                <li>PLC Programming (Studio 5000, Allen-Bradley)</li>
+                <li>AutoCAD Electrical, SolidWorks</li>
+                <li>C++, MATLAB, SCADA, HMI</li>
+                <li>WHMIS, FANUC Robot Programming, NFPA 70E</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="card">
+                <h3>Packaging Cartoner Machine</h3>
+                <p>Designed electrical schematics for automation systems integrating ABB robots.</p>
+            </div>
+            <div class="card">
+                <h3>Elevator Control System</h3>
+                <p>Developed a digital logic-controlled elevator system with FPGA.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extracurriculars Section -->
+    <section id="extracurriculars">
+        <div class="container">
+            <h2>Extracurriculars</h2>
+            <p>Member of MacAI Society | Internal Relations Coordinator (2023 - 2024)</p>
+            <p>Technician Assistant at Dunn Right, supporting electrical and plumbing installations.</p>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Adam Al-Jabari</p>
+        <p>&copy; 2025 Adam Al-Jabari | <a href="mailto:aljabara@mcmaster.ca">Contact Me</a></p>
     </footer>
+
 </body>
 </html>
